@@ -9,3 +9,6 @@ dst_retu = {}
 
 def filter_dns(packet):
     return (DNS in packet and packet[DNS].opcode==0 and packet[DNSQR].qtype==1)
+
+def rafi():
+    pass
